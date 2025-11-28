@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import 'tailwindcss';
+
+/* Global font: Poppins for all pages */
+:root { --ui-font: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+body { font-family: var(--ui-font); }
+.bg-lain{
+	        background-color:        #D2FFCC;
+
+}
+/* Smooth header transitions for scroll effects (light theme) */
+#main-header {
+	-webkit-transition: background-color 300ms ease-in-out, padding 300ms ease-in-out, box-shadow 300ms ease-in-out, backdrop-filter 300ms ease-in-out;
+	transition: background-color 300ms ease-in-out, padding 300ms ease-in-out, box-shadow 300ms ease-in-out, backdrop-filter 300ms ease-in-out;
+}
+
+/* Slight translate to make shrink feel natural */
+.scrolled-up {
+	transform: translateY(0);
+}
+
+.scrolled-down {
+	transform: translateY(-2px);
+}
+
+.logo {
+	background-image: url('../images/logo-2.png');
+}
